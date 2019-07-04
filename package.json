@@ -29,7 +29,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "predeploy": "bower install && grunt build"
+    "predeploy": "bower install && grunt build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "eventemitter2": "~0.4.13",
@@ -45,7 +47,8 @@
     "winston": "~0.7.2",
     "bookshelf": "~0.6.8",
     "knex": "~0.5.11",
-    "fs-extra": "~0.8.1"
+    "fs-extra": "~0.8.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "chai": "~1.9.1",
@@ -70,5 +73,6 @@
     "sinon-chai": "~2.5.0",
     "sqlite3": "~2.2.0",
     "time-grunt": "~0.3.1"
-  }
+  },
+  "snyk": true
 }
