@@ -44,7 +44,7 @@
     "websocket-multiplex": "~0.1.0",
     "winston": "~0.7.2",
     "bookshelf": "~0.6.8",
-    "knex": "~0.5.11",
+    "knex": "~2.4.0",
     "fs-extra": "~0.8.1"
   },
   "devDependencies": {
